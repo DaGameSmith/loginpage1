@@ -1,6 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     height: 100vh;
+}
+
+.signup {
+    font-weight: 900;
 }
 
 .darkbg {
@@ -21,29 +29,49 @@ body {
 
 .signup p {
     margin-top: 0;
-    padding: 50px;
+    margin-bottom: 0;
+    padding: 30px;
     text-align: center;
 }
 
 .google {
-    background-color: powderblue;
+    background-color: #2e75f8;
     padding: 10px 0;
-    max-width: 180px;
+    max-width: 50%;
     margin-right: auto;
     margin-left: auto;
 }
 
+.google a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.google a .textspan{
+    padding-right: 10px;
+    font-weight: 100;
+    font-size: 0.75rem;
+    color: white;
+}
+
 .google .imgspan {
     background-color: white;
+    width: 25px;
+    height: 15px;
+    
 }
 
 .google a img {
-    width: 15px;
-    height: 12px;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 5px;
 }
 .divider {
-    width: 90%;
+    width: 50%;
     margin: auto;
+    font-weight: 100;
+    font-size: 0.75rem;
+    color: #767676;
 }
 .divider span {
     display: flex;
@@ -52,7 +80,7 @@ body {
 .divider span:before, .divider span:after{
     content: "";
     flex: 1 1;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #cdcaca;
     margin: auto;
 }
 .divider span:before {
@@ -60,4 +88,44 @@ body {
 }
 .divider span:after {
     margin-left: 10px
+}
+
+.formcontrol {
+    width: 50%;
+    margin: auto;
+}
+
+.formcontrol label {
+    color: #767676;
+}
+
+input[type="text"], input[type="email"] {
+    min-width: 100%;
+    padding: 10px;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: rgb(250, 122, 144);
+    color: white;
+    border: none;
+    min-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.login {
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 0.75rem;
+}
+
+.login p {
+    text-align: center;
 }
