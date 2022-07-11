@@ -12,7 +12,7 @@ body {
 }
 
 .darkbg {
-    background-color: #190130;
+    background-color: #011c30;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -20,11 +20,17 @@ body {
 }
 
 .auth {
-    width: 40%;
-    min-height: 70%;
-    max-height: 70%;
+    width: 20%;
+    min-height: 60%;
+    max-height: 60%;
     /* margin: auto; */
     background-color: white;
+}
+
+.container {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .signup p {
@@ -37,9 +43,10 @@ body {
 .google {
     background-color: #2e75f8;
     padding: 10px 0;
-    max-width: 50%;
+    /* max-width: 50%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto; */
+    margin-bottom: 30px;
 }
 
 .google a {
@@ -67,8 +74,10 @@ body {
     padding-left: 5px;
 }
 .divider {
-    width: 50%;
-    margin: auto;
+    /* width: 50%;
+    margin-right: auto;
+    margin-left: auto; */
+    margin-bottom: 30px;
     font-weight: 100;
     font-size: 0.75rem;
     color: #767676;
@@ -91,8 +100,10 @@ body {
 }
 
 .formcontrol {
-    width: 50%;
-    margin: auto;
+    /* width: 50%;
+    margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 30px;
 }
 
 .formcontrol label {
@@ -117,10 +128,23 @@ input[type="submit"] {
     border-radius: 5px;
 }
 
+input[type="submit"]:hover {
+    color: #fa7a90;
+    background-color: white;
+    border: 1px solid #fa7a90;
+}
+
+.formspace1 {
+    margin-bottom: 15px;
+}
+
+.formspace2 {
+    margin-bottom: 20px;
+}
 
 .login {
-    width: 50%;
-    margin: auto;
+    /* width: 50%;
+    margin: auto; */
     padding: 5px;
     font-weight: 900;
     font-size: 0.75rem;
@@ -128,4 +152,14 @@ input[type="submit"] {
 
 .login p {
     text-align: center;
+    margin: 0;
+}
+
+.login p a {
+    color: #2e75f8;
+    text-decoration: none;
+}
+
+.login p a:hover {
+    text-decoration: underline;
 }
